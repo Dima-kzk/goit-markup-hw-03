@@ -33,6 +33,8 @@ h1,h2,h3,p{
 
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container{
@@ -55,8 +57,21 @@ img{
     padding-left: 0;
 }
 
+.list-gap + .list-gap{
+    margin-left: 24px;
+}
+
 .item{
     background-color: var(--white);
+}
+
+.hide-header{
+    font-size: 0;
+}
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .header{
@@ -118,6 +133,7 @@ img{
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    line-height: 1.5;
 }
 
 .contacts .link{
@@ -193,7 +209,6 @@ img{
 
     font-family: inherit;
     font-weight: 600;
-    font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.04em;
 
@@ -222,6 +237,7 @@ img{
     font-weight: 600;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 .site-nav li{
@@ -240,16 +256,22 @@ img{
 
 /* features */
 
+.features{
+    background-color: var(--white);
+}
+
 .features-title{
     color: var(--navy-blue);
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
 }
 
-.features>.container,
-.product>.container{
+.features>.container
+{
     padding-top: 120px;
 }
 
@@ -258,6 +280,10 @@ img{
 }
 
 /* product */
+
+.product{
+    background-color: var(--white);
+}
 
 .product-title,
 .team-title{
@@ -269,9 +295,9 @@ img{
     text-align: center;
 }
 
-.product>.container{
+/* .product>.container{
     padding-bottom: 120px;
-}
+} */
 
 .product-title,
 .team-title{
@@ -313,10 +339,10 @@ img{
     text-align: center;
 }
 
-.team>.container{
+/* .team>.container{
     padding-top: 120px;
     padding-bottom: 120px;
-}
+} */
 
 .team-list{
     display: flex;
@@ -331,11 +357,11 @@ img{
 .portfolio-button{
     color: var(--iris);
     background: var(--cloud);
-    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.04em;
     line-height: 1.5;
     border: 1px solid var(--cornflower);
+    padding: 12px 24px;
 }
 
 .portfolio-button:hover,
@@ -359,6 +385,7 @@ img{
 .portfolio{
     padding-top: 96px;
     padding-bottom: 120px;
+    background-color: var(--white);
 }
 
 .filter-list{
@@ -387,3 +414,13 @@ img{
     padding-bottom: 32px;
     padding-left: 32px;
 }
+
+.border-card{
+    border-bottom: 0.5px solid var(--cloud);
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* section{
+    background-color: #404BBF;
+} */
