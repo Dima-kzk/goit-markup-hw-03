@@ -115,6 +115,13 @@ img{
     text-decoration: none;
 }
 
+.logo,
+.site-nav .link{
+    display: inline-block;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
 .logo-web{
     color: var(--iris);
 }
@@ -237,10 +244,7 @@ img{
     line-height: 1.5;
 }
 
-.site-nav li{
-    padding-bottom: 24px;
-    padding-top: 24px;
-}
+
 
 /* hero */
 
